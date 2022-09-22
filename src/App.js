@@ -13,7 +13,7 @@ import "./styles/panels.sass";
 import "./styles/img.sass";
 
 //constants
-import { APP_ID_DEFAULT, notifyUrl, rootUrl } from "./constants";
+import { APP_ID_DEFAULT, NAME_PROJECT, notifyUrl, rootUrl } from "./constants";
 
 import { Home, ResultPanel, AdminPanel, NotifyPage } from "./panels";
 import axios from "axios";
@@ -131,7 +131,7 @@ const App = () => {
     <Router>
       {fetchedUser && (
         <Home
-          path="results-year-1"
+          path={NAME_PROJECT}
           // path="/"
           fetchedUser={fetchedUser}
           go={go}
