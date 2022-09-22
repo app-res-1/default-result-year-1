@@ -41,7 +41,7 @@ const AdminPanelMain = ({
         tab={
           <div
             className="admin-panel-container__icon"
-            onClick={() => navigate("results-year-1")}
+            onClick={() => navigate(NAME_PROJECT)}
             // onClick={() => navigate("/")}
           >
             <Icon20HomeOutline />
